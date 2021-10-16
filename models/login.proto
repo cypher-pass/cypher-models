@@ -1,0 +1,14 @@
+syntax = "proto3";
+package login;
+
+message Login {
+  string name = 1;
+  string url = 2;
+  string username = 3;
+  string password = 4;
+  optional string notes = 5;
+}
+
+message LoginList {
+  repeated Login login = 1;
+}
